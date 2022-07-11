@@ -1,0 +1,24 @@
+{
+  "name": "goldrush",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "truffle migrate --network bscTestnet --reset --compile-none",
+    "deploy": "truffle deploy --network bscTestnet --reset --compile-none",
+    "deploy-mainnet": "truffle deploy --network bsc --reset --compile-none"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.11.0"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "@openzeppelin/contracts": "^4.3.2",
+    "@openzeppelin/contracts-upgradeable": "^4.3.2",
+    "@truffle/hdwallet-provider": "^1.6.0",
+    "truffle-plugin-verify": "0.5.21"
+  }
+}
