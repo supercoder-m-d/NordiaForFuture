@@ -1,0 +1,368 @@
+{
+  "contractName": "INordiaForFuture",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "minter",
+          "type": "address"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"minter\",\"type\":\"address\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/INordiaForFuture.sol\":\"INordiaForFuture\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/INordiaForFuture.sol\":{\"keccak256\":\"0xd47e04ed77d3b1b4eda9c096adcf7cbe7def1f2c58dac320e94c3b8ccecd49e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://166516f7c812b6af3924c6d31d7dad6b4fe89a07344dc128b70cae7baeded670\",\"dweb:/ipfs/QmYBHB2j5pPQwpk4Bf4THkf7GNPyQYJaSBJtjaAX1pJJCj\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface INordiaForFuture {\r\n    function mint(address minter) external;\r\n    function totalSupply() external view returns (uint256);\r\n}",
+  "sourcePath": "E:\\Projects\\Solidity\\NordiaForFuture\\contracts\\INordiaForFuture.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/INordiaForFuture.sol",
+    "exportedSymbols": {
+      "INordiaForFuture": [
+        2619
+      ]
+    },
+    "id": 2620,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2608,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2619,
+        "linearizedBaseContracts": [
+          2619
+        ],
+        "name": "INordiaForFuture",
+        "nameLocation": "70:16:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6a627842",
+            "id": 2613,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "103:4:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2611,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2610,
+                  "mutability": "mutable",
+                  "name": "minter",
+                  "nameLocation": "116:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2613,
+                  "src": "108:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2609,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:16:15"
+            },
+            "returnParameters": {
+              "id": 2612,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:15"
+            },
+            "scope": 2619,
+            "src": "94:39:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "18160ddd",
+            "id": 2618,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSupply",
+            "nameLocation": "148:11:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2614,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "159:2:15"
+            },
+            "returnParameters": {
+              "id": 2617,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2616,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2618,
+                  "src": "185:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2615,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "184:9:15"
+            },
+            "scope": 2619,
+            "src": "139:55:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2620,
+        "src": "60:137:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:164:15"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/INordiaForFuture.sol",
+    "exportedSymbols": {
+      "INordiaForFuture": [
+        2619
+      ]
+    },
+    "id": 2620,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2608,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2619,
+        "linearizedBaseContracts": [
+          2619
+        ],
+        "name": "INordiaForFuture",
+        "nameLocation": "70:16:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6a627842",
+            "id": 2613,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "103:4:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2611,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2610,
+                  "mutability": "mutable",
+                  "name": "minter",
+                  "nameLocation": "116:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2613,
+                  "src": "108:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2609,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:16:15"
+            },
+            "returnParameters": {
+              "id": 2612,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:15"
+            },
+            "scope": 2619,
+            "src": "94:39:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "18160ddd",
+            "id": 2618,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSupply",
+            "nameLocation": "148:11:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2614,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "159:2:15"
+            },
+            "returnParameters": {
+              "id": 2617,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2616,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2618,
+                  "src": "185:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2615,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "184:9:15"
+            },
+            "scope": 2619,
+            "src": "139:55:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2620,
+        "src": "60:137:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:164:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-07-12T06:04:23.432Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
