@@ -4,11 +4,7 @@ const {MerkleTree} = require('merkletreejs');
 const keccak256 = require('keccak256');
 
 let whitelists = [
-    '0x79687E28c543E8EC6F1b3fCc779f83a791279f68',
-    '0x117289448Daed9B563E3575E59240Ba4b0c4D53a',
-    '0x320B620147F450a63d7eeACE5053Ce8BB1B9cd2f',
-    '0xf5Fda3393ab2EbBc4F9dB28BB541829F70B247F3',
-    '0x8988d44e5aFE23Ce77e1a5ACD47CDc8DBf65652a'
+    
 ];
 const options = {
     keepAlive: true,
@@ -37,7 +33,7 @@ module.exports = async function (deployer) {
    // console.log(rootHash);
     await ogSale.setMerkleRoot(rootHash);
     // console.log(deployer.address);
-    const hexProof = merkleTree.getHexProof(keccak256('0x8988d44e5aFE23Ce77e1a5ACD47CDc8DBf65652a'));
+    const hexProof = merkleTree.getHexProof(keccak256(''));
     // console.log(hexProof);
     await ogSale.claimNft(hexProof, {
         value: web3.utils.toWei('0.075', "ether")
